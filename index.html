@@ -4,7 +4,7 @@
   <script>document.documentElement.classList.add("js");</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Renan Silva Ribeiro da Silva — Desenvolvedor de Sistemas Full Stack">
+  <meta name="description" content="Portfólio de Renan Ribeiro da Silva — Desenvolvedor Full Stack">
   <title>Renan Ribeiro da Silva | Desenvolvedor Full Stack</title>
   <link rel="icon" type="image/png" href="logo-r.png">
   <link rel="stylesheet" href="style.css">
@@ -133,16 +133,14 @@
                 <li>PostgreSQL</li>
               </ul>
             </div>
-            <h3>SIB-V2 (Sistema Integrado Brightlux)</h3>
+            <h3>Modernização de ERP corporativo</h3>
             <p>
-              Evolução arquitetural do <strong>SIB (legado)</strong> — ERP monolítico interno da Brightlux em Django,
-              com mais de 20 módulos operacionais (compras, estoque, comercial, financeiro, RH, projetos, fiscal
-              e outros), frontend híbrido em templates Bootstrap e React acoplado via django-vite, além de integrações
-              com Omie, Camunda e bases MySQL legadas. O SIB-V2 repensa essa base para uma stack moderna e
-              desacoplada: backend em Django com DRF, JWT e Celery; frontend SPA em React, Vite, Tailwind v4 e
-              TypeScript. Ambiente containerizado com PostgreSQL e Redis próprios, isolados do banco legado, com
-              bootstrap automatizado via Docker e Makefile. Em fase de modernização, com documentação de migração
-              e PoC dos módulos de autenticação JWT, healthcheck (CRUD API + tela React).
+              Evolução de um <strong>ERP monolítico legado</strong> em Django (dezenas de módulos operacionais:
+              compras, estoque, comercial, financeiro, RH, projetos, fiscal e outros) para uma stack desacoplada:
+              backend Django + DRF, JWT e Celery; frontend SPA em React, Vite, Tailwind v4 e TypeScript.
+              Integrações com ERPs externos, motores de workflow e bases legadas. Ambiente containerizado com
+              PostgreSQL e Redis próprios, bootstrap via Docker e Makefile, com PoC de autenticação JWT e
+              healthcheck (API + tela React).
             </p>
           </div>
         </article>
@@ -164,7 +162,7 @@
             </div>
             <h3>Administreino</h3>
             <p>
-              <strong>Projeto pessoal</strong> — diferente do SIB que é um projeto corporativo, aqui há liberdade para detalhar
+              <strong>Projeto pessoal</strong> — espaço para detalhar
               stack e decisões técnicas com mais profundidade. Plataforma full stack para criar, executar e
               acompanhar treinos de musculação, com experiência mobile-first e instalável como PWA. O usuário
               monta fichas com exercícios, séries, cargas e descansos; registra sessões em tempo real com
@@ -178,6 +176,36 @@
             </p>
           </div>
         </article>
+
+        <article class="project-card">
+          <div class="project-card__glow"></div>
+          <div class="project-card__inner">
+            <div class="project-card__top">
+              <span class="project-card__index">03</span>
+              <ul class="project-card__tags">
+                <li>Django</li>
+                <li>Multi-tenant</li>
+                <li>React</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>CI/CD</li>
+              </ul>
+            </div>
+            <h3>Plataforma multi-tenant de gestão</h3>
+            <p>
+              Sistema de gestão com <strong>isolamento por schema</strong> no PostgreSQL: cada empresa opera
+              de forma independente, com SPA em React (Vite + Tailwind + TypeScript), API Django/DRF com JWT
+              e chaves de integração por aplicação. Inclui ambientes de plataforma e tenant, Docker/Makefile
+              para desenvolvimento, CI com testes e deploy com backup, migrations e healthcheck — produção
+              via reverse proxy e túnel seguro.
+            </p>
+            <p>
+              Showcase público (sem o código-fonte):
+              <a href="https://github.com/renanrds/conexo-showcase" target="_blank" rel="noopener noreferrer">conexo-showcase</a>.
+            </p>
+          </div>
+        </article>
+
       </section>
 
     </main>
